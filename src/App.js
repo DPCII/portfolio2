@@ -28,21 +28,51 @@ function App() {
         transition: "height 1.15s ease-in-out"
       })
   }
+
+  const [portfolioStyle, setPortfolioStyle] = useState({
+    visibility: "visible",
+    opacity: "1",
+    transition: "visibility 1s, opacity 1s ease-in-out",
+  });
+
+  function changePortfolioStyle() {
+    if(portfolioStyle.visibility === "visible")
+      setPortfolioStyle({
+        visibility: "hidden",
+        opacity: "0",
+        transition: "visibility 1s, opacity 1s ease-in-out",
+      })
+    else
+      setPortfolioStyle({
+        visibility: "visible",
+        opacity: "1",
+        transition: "visibility 1s, opacity 1s ease-in-out",
+      })
+    
+  }
   
 
   return (
     <Window>
       
-      <Header onClick={() => changeHeight()} style={doorStyle}></Header>
+      <Header onClick={() => { 
+        changeHeight();
+        changePortfolioStyle();
+        }} style={doorStyle}></Header>
 
       <CenterDiv />
 
       <Footer style={doorStyle}>
 
-        <LinkComponent>Github</LinkComponent>
-        <LinkComponent>LinkedIn</LinkComponent>
-        <LinkComponent>Email</LinkComponent>
+        <PortfolioBar style={portfolioStyle}>
+          A Portfolio
+        </PortfolioBar>
 
+        <NavBar>
+          <LinkComponent>Github</LinkComponent>
+          <LinkComponent>LinkedIn</LinkComponent>
+          <LinkComponent>Email</LinkComponent>
+        </NavBar>
       </Footer>
 
       <GlobalStyle />
@@ -59,6 +89,23 @@ const Window = styled.div`
   box-sizing: border-box;
   overflow: hidden;
   background-color: snow;
+  position: relative;
+  display: flex;
+  justify-content: center;
+`;
+
+const PortfolioBar = styled.div`
+  position: relative;
+  font-family: 'IBM Plex Sans';
+  font-size: 28px;
+`;
+
+const NavBar = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  bottom: 12px;
 `;
 
 const LinkComponent = styled.div`
