@@ -35,15 +35,14 @@ function App() {
       
       <Header onClick={() => changeHeight()} style={doorStyle}></Header>
 
-      <CenterDiv>
-        Lorem, ipsum
-      </CenterDiv>
+      <CenterDiv />
 
       <Footer style={doorStyle}>
 
         <LinkComponent>Github</LinkComponent>
         <LinkComponent>LinkedIn</LinkComponent>
         <LinkComponent>Email</LinkComponent>
+
       </Footer>
 
       <GlobalStyle />
@@ -63,7 +62,6 @@ const Window = styled.div`
 `;
 
 const LinkComponent = styled.div`
-  position: relative;
   padding: 5px;
   border-radius: 3px;
   cursor: pointer;
