@@ -22,8 +22,4 @@ export const Header = styled.div`
     min-height: 80px;
     background-size: auto;
   }
-
-  @media (min-width: 1437px) {
-    min-height: 100px;
-  }
 `;

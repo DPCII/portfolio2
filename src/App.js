@@ -4,6 +4,8 @@ import GlobalStyle from './scripts/Global_style'
 import { CenterDiv } from './components/CenterDiv';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
+import codingGif from './images/codingAnimated.gif';
+import { LinkComponent } from './components/LinkComponent';
 
 
 function App() {
@@ -29,49 +31,74 @@ function App() {
       })
   }
 
-  const [portfolioStyle, setPortfolioStyle] = useState({
+  const [visibilityStyle, setVisibilityStyle] = useState({
     visibility: "visible",
     opacity: "1",
-    transition: "visibility 1s, opacity 1s ease-in-out",
+    transition: "visibility 1.25s, opacity 1.25s ease-in-out",
   });
 
-  function changePortfolioStyle() {
-    if(portfolioStyle.visibility === "visible")
-      setPortfolioStyle({
+  function changeVisibilityStyle() {
+    if(visibilityStyle.visibility === "visible")
+      setVisibilityStyle({
         visibility: "hidden",
         opacity: "0",
-        transition: "visibility 1s, opacity 1s ease-in-out",
+        transition: "visibility 1.25s, opacity 1.25s ease-in-out",
       })
     else
-      setPortfolioStyle({
+      setVisibilityStyle({
         visibility: "visible",
         opacity: "1",
-        transition: "visibility 1s, opacity 1s ease-in-out",
+        transition: "visibility 1.25s, opacity 1.25s ease-in-out",
       })
     
   }
-  
+
+
 
   return (
     <Window>
       
       <Header onClick={() => { 
         changeHeight();
-        changePortfolioStyle();
-        }} style={doorStyle}></Header>
+        changeVisibilityStyle();
+        }} 
+        style={doorStyle}></Header>
 
       <CenterDiv />
 
+      <MapFrame onClick={() => {
+        changeHeight();
+        changeVisibilityStyle();
+      }} 
+        style={visibilityStyle}>
+        <img alt="coding" src={codingGif} />
+      </MapFrame>
+
       <Footer style={doorStyle}>
 
-        <PortfolioBar style={portfolioStyle}>
+        <PortfolioBar style={visibilityStyle}>
           A Portfolio
         </PortfolioBar>
 
         <NavBar>
-          <LinkComponent>Github</LinkComponent>
-          <LinkComponent>LinkedIn</LinkComponent>
-          <LinkComponent>Email</LinkComponent>
+          <LinkComponent>
+            <a href="https://github.com/DPCII" target="_blank" rel="noopener noreferrer">
+              Github
+            </a>
+          </LinkComponent>
+
+          <LinkComponent>
+            <a href="https://www.linkedin.com/in/dpchildsii/" target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
+          </LinkComponent>
+
+          <LinkComponent>
+            <a href="mailto:dpchildsii@gmail.com">
+              Email
+            </a>
+          </LinkComponent>
+
         </NavBar>
       </Footer>
 
@@ -96,8 +123,10 @@ const Window = styled.div`
 
 const PortfolioBar = styled.div`
   position: relative;
-  font-family: 'IBM Plex Sans';
-  font-size: 28px;
+  bottom: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+  text-shadow: 0px 1px 2px 1px black;
 `;
 
 const NavBar = styled.div`
@@ -105,20 +134,16 @@ const NavBar = styled.div`
   display: flex;
   justify-content: space-evenly;
   position: relative;
-  bottom: 12px;
+  bottom: 18px;
 `;
 
-const LinkComponent = styled.div`
-  padding: 5px;
-  border-radius: 3px;
-  cursor: pointer;
-  :hover {
-    background-color: rgba(150, 150, 150, .5);
-  }
-
-  :active {
-    background-color: rgba(220, 158, 70, .9);
-  }
-
+const MapFrame = styled.div`
+  background-color: #2c3134;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: absolute;
 `;
-
