@@ -111,7 +111,7 @@ export function CenterDiv() {
           </SectionContent>
 
           <SectionContent>
-          My experience in the US Army propelled me beyond my pre-conceived limits. The challenges I faced forced me to push through physical and mental hurdles I never imagined were possible. I voluntered and was selected for the US Army's Special Forces, learned Mandarin, and fought for American interests abroad. I've worked with tribal fighters on the banks of the Euphrates, comforted families caught in the middle of combat, and treated the mortally wounded. After the Army, I increased sales for a large corporation and studied at one of the world's top universities. The resilience and adaptability I aquired along the way proved invaluable to me.
+          My experience in the US Army propelled me beyond my preconceived limits. The challenges I faced forced me to push through physical and mental hurdles I never imagined were possible. I voluntered and was selected for the US Army's Special Forces, learned Mandarin, and fought for American interests abroad. I've worked with tribal fighters on the banks of the Euphrates, comforted families caught in the middle of combat, and treated the mortally wounded. After the Army, I increased sales for a large corporation and studied at one of the world's top universities. The resilience and adaptability I acquired along the way proved invaluable to me.
           </SectionContent>
 
           <SectionContent>
