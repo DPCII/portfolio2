@@ -3,9 +3,10 @@ import styled from 'styled-components'
 import GlobalStyle from './scripts/Global_style'
 import { CenterDiv } from './components/CenterDiv';
 import { Header } from './components/Header';
-import { Footer } from './components/Footer';
+import { Footer, NavBar, PortfolioBar } from './components/Footer';
 import codingGif from './images/codingAnimated.gif';
 import { LinkComponent } from './components/LinkComponent';
+import UpChevron from './components/UpChevron.js'
 
 
 function App() {
@@ -66,21 +67,24 @@ function App() {
 
       <CenterDiv />
 
-      <MapFrame onClick={() => {
-        changeHeight();
-        changeVisibilityStyle();
-      }} 
-        style={visibilityStyle}>
+      <PeekFrame style={visibilityStyle}>
         <img alt="coding" src={codingGif} />
-      </MapFrame>
+      </PeekFrame>
 
       <Footer style={doorStyle}>
 
-        <PortfolioBar style={visibilityStyle}>
+        <PortfolioBar style={visibilityStyle}
+          onClick={() => {
+            changeHeight();
+            changeVisibilityStyle();
+          }}
+        >
+          <UpChevron />
           A Portfolio
         </PortfolioBar>
 
         <NavBar>
+
           <LinkComponent>
             <a href="https://github.com/DPCII" target="_blank" rel="noopener noreferrer">
               Github
@@ -121,23 +125,7 @@ const Window = styled.div`
   justify-content: center;
 `;
 
-const PortfolioBar = styled.div`
-  position: relative;
-  bottom: 30px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 36px;
-  text-shadow: 0px 1px 2px 1px black;
-`;
-
-const NavBar = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  position: relative;
-  bottom: 18px;
-`;
-
-const MapFrame = styled.div`
+const PeekFrame = styled.div`
   background-color: #2c3134;
   height: auto;
   width: 100%;

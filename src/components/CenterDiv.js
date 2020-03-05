@@ -12,10 +12,14 @@ export function CenterDiv() {
 
   return (
     <CenterDivWindow>
+      <h3>
+        Profile
+      </h3>
 
       <Section>
+
       <SectionTitle>
-        Projects
+        Student Projects
       </SectionTitle>
 
       <Accordion1>
@@ -111,7 +115,7 @@ export function CenterDiv() {
           </SectionContent>
 
           <SectionContent>
-          I transitioned into engineering because I came to appreciate the power of solving problems through software. I enjoy the process of thinking and writing in code, as well as the endless opportunity for self-improvement. It also allows me to utilize my strengths of managing chaos and solving problems, both of which are unavoidable in the process of achieving ambitious goals.
+          I transitioned into engineering because I came to appreciate the power of solving problems through software. I enjoy the process of thinking and writing in code and its endless opportunities for self-improvement. Programming allows me to utilize my strengths of managing chaos and coordinating multivariate systems, both of which are unavoidable in the process of achieving ambitious engineering goals.
           </SectionContent>
 
       </Section>

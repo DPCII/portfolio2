@@ -7,9 +7,9 @@ export const LinkComponent = styled.div`
   font-size: 14px;
   cursor: pointer;
   :hover {
-    background-color: rgba(150, 150, 150, .5);
+    background-color: rgb(251,76,46);
   }
   :active {
-    background-color: rgba(220, 158, 70, .9);
+    background-color: rgba(251,76,46, .6);
   }
 `;
