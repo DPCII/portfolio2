@@ -12,22 +12,32 @@ import UpChevron from './components/UpChevron.js'
 function App() {
 
   const [doorStyle, setDoorStyle] = useState({
-    height: "45vh",
-    maxWidth: "100%",
+    height: "50vh",
     transition: "height 2s ease-in-out"
   });
 
-  function changeHeight() {
-    if(doorStyle.height === "45vh") 
+  function openDoors() {
+    if(doorStyle.height === "50vh" || doorStyle.height === "45vh") 
       setDoorStyle({
         height: "6vh",
-        maxWidth: "100%",
         transition: "height 1.15s ease-in-out"
       })
     else
       setDoorStyle({
+        height: "50vh",
+        transition: "height 1.15s ease-in-out"
+      })
+  }
+
+  function peekDoors() {
+    if(doorStyle.height === "50vh")
+      setDoorStyle({
         height: "45vh",
-        maxWidth: "100%",
+        transition: "height 1.15s ease-in-out"
+      })
+    else if(doorStyle.height === "45vh")
+      setDoorStyle({
+        height: "50vh",
         transition: "height 1.15s ease-in-out"
       })
   }
@@ -59,11 +69,21 @@ function App() {
   return (
     <Window>
       
-      <Header onClick={() => { 
-        changeHeight();
-        changeVisibilityStyle();
-        }} 
-        style={doorStyle}></Header>
+      <Header 
+        onClick={() => { 
+          openDoors();
+          changeVisibilityStyle();
+        }}
+        onMouseEnter={() => {
+          peekDoors();
+        }}
+        onMouseLeave={() => {
+          peekDoors();
+        }}
+        style={doorStyle}
+        >
+
+        </Header>
 
       <CenterDiv />
 
@@ -71,11 +91,19 @@ function App() {
         <img alt="coding" src={codingGif} />
       </PeekFrame>
 
-      <Footer style={doorStyle}>
+      <Footer 
+        style={doorStyle}
+        onMouseEnter={() => {
+          peekDoors();
+        }}
+        onMouseLeave={() => {
+          peekDoors();
+        }}
+        >
 
         <PortfolioBar style={visibilityStyle}
           onClick={() => {
-            changeHeight();
+            openDoors();
             changeVisibilityStyle();
           }}
         >
