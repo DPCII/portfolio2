@@ -11,6 +11,7 @@ export const Footer = styled.div`
   color: white;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   align-items: center;
   font-weight: 700;
 `;
