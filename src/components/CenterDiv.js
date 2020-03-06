@@ -137,7 +137,6 @@ const CenterDivWindow = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
   overflow-y: scroll;
   z-index: 0;
 `;
