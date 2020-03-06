@@ -133,6 +133,7 @@ const CenterDivWindow = styled.div`
   height: 70%;
   width: 95%;
   max-width: 1200px;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   align-items: center;

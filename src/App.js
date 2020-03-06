@@ -157,6 +157,7 @@ const PeekFrame = styled.div`
   background-color: #2c3134;
   height: auto;
   width: 100%;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;

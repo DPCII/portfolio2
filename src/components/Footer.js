@@ -8,8 +8,10 @@ export const Footer = styled.div`
   z-index: 1;
   bottom: 0px;
   color: white;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   justify-content: space-evenly;
   align-items: center;
   font-weight: 700;
@@ -17,7 +19,9 @@ export const Footer = styled.div`
 
 export const NavBar = styled.div`
   width: 100%;
+  display: -ms-flexbox;
   display: flex;
+  justify-content: space-between;
   justify-content: space-evenly;
   position: relative;
   bottom: 0px;
@@ -26,6 +30,7 @@ export const NavBar = styled.div`
 export const PortfolioBar = styled.div`
   cursor: pointer;
   position: absolute;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   align-items: center;
