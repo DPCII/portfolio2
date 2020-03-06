@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const LinkComponent = styled.div`
-  margin: 0 5px 0 5px;
+  margin: 5px;
   padding: 5px;
   border-radius: 3px;
   font-size: 14px;
