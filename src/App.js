@@ -163,4 +163,5 @@ const PeekFrame = styled.div`
   align-items: center;
   margin: 0 auto;
   position: absolute;
+  left: 0;
 `;

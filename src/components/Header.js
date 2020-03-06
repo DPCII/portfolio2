@@ -12,6 +12,7 @@ export const Header = styled.div`
   background-position: bottom center;
   background-repeat: no-repeat;
   position: absolute;
+  left: 0;
   z-index: 1;
 
   @media (min-width: 568px) {
