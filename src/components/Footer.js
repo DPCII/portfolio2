@@ -31,6 +31,7 @@ export const PortfolioBar = styled.div`
   transform: translateX(-50%);
   display: -ms-flexbox;
   display: flex;
+  width: 80%;
   flex-direction: column;
   align-items: center;
   bottom: 65%;

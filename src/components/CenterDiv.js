@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components';
 import { Section, SectionTitle, SectionContent } from './sections.js';
 import { Accordion1, AccordionItem1 } from './accordionStyles';
