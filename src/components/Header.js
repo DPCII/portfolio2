@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import bgimage from '../images/undergroundE.png';
+import bgimage from '../images/undergroundLoad.png';
 
 
 export const Header = styled.div`
