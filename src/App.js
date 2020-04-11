@@ -45,7 +45,7 @@ function App() {
   const [visibilityStyle, setVisibilityStyle] = useState({
     visibility: "visible",
     opacity: "1",
-    transition: "visibility 1.25s, opacity 1.25s ease-in-out",
+    transition: "visibility 1.25s, opacity 1.5s ease-in-out",
   });
 
   function changeVisibilityStyle() {
@@ -74,12 +74,6 @@ function App() {
           openDoors();
           changeVisibilityStyle();
         }}
-        onMouseEnter={() => {
-          peekDoors();
-        }}
-        onMouseLeave={() => {
-          peekDoors();
-        }}
         style={doorStyle}
         >
 
@@ -93,12 +87,6 @@ function App() {
 
       <Footer 
         style={doorStyle}
-        onMouseEnter={() => {
-          peekDoors();
-        }}
-        onMouseLeave={() => {
-          peekDoors();
-        }}
         >
 
         <PortfolioBar style={visibilityStyle}

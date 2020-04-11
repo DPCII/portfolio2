@@ -17,6 +17,23 @@ export function CenterDiv() {
       </h3>
 
       <Section>
+        <SectionTitle>Background</SectionTitle>
+
+          <SectionContent>
+          I'm a software engineer living in the Washington DC area. I was born in Germany and lived in different places and different cultures around the world. I first studied history and politics before transitioning into engineering and I continue to enjoy a lifestyle of broad academic interest. I push myself to take on difficult challenges and learn new skills, and I am especially inspired by governance and security problems.
+          </SectionContent>
+
+          <SectionContent>
+          My experience in the US Army propelled me beyond my preconceived limits. The challenges I faced forced me to push through physical and mental hurdles I never imagined were possible. I volunteered and was selected for the US Army's Special Forces, learned Mandarin, and fought for American interests abroad. I've worked with tribal fighters on the banks of the Euphrates, comforted families caught in the middle of combat, and treated the mortally wounded. After the Army, I increased sales for a large corporation and studied at one of the world's top universities. The resilience and adaptability I acquired along the way proved invaluable to me.
+          </SectionContent>
+
+          <SectionContent>
+          I transitioned into engineering because I came to appreciate the power of solving problems at digital speed. I enjoy the process of thinking and writing in code, and its endless opportunities for self-improvement. Programming allows me to utilize my strengths of managing chaos and coordinating multivariate systems, both of which are unavoidable in the process of achieving ambitious engineering goals.
+          </SectionContent>
+
+      </Section>
+
+      <Section>
 
       <SectionTitle>
         Student Projects
@@ -101,23 +118,6 @@ export function CenterDiv() {
             </TextBlock>
           </AccordionItem1>
         </Accordion1>
-      </Section>
-
-      <Section>
-        <SectionTitle>Background</SectionTitle>
-
-          <SectionContent>
-          I'm a software engineer living in the Washington DC area. I was born in Germany and lived in different places and different cultures around the world. I first studied history and politics before transitioning into engineering and I continue to enjoy a lifestyle of broad academic interest. I push myself to take on difficult challenges and learn new skills, and I am especially inspired by governance and security problems.
-          </SectionContent>
-
-          <SectionContent>
-          My experience in the US Army propelled me beyond my preconceived limits. The challenges I faced forced me to push through physical and mental hurdles I never imagined were possible. I volunteered and was selected for the US Army's Special Forces, learned Mandarin, and fought for American interests abroad. I've worked with tribal fighters on the banks of the Euphrates, comforted families caught in the middle of combat, and treated the mortally wounded. After the Army, I increased sales for a large corporation and studied at one of the world's top universities. The resilience and adaptability I acquired along the way proved invaluable to me.
-          </SectionContent>
-
-          <SectionContent>
-          I transitioned into engineering because I came to appreciate the power of solving problems at digital speed. I enjoy the process of thinking and writing in code, and its endless opportunities for self-improvement. Programming allows me to utilize my strengths of managing chaos and coordinating multivariate systems, both of which are unavoidable in the process of achieving ambitious engineering goals.
-          </SectionContent>
-
       </Section>
 
       
